@@ -6,6 +6,7 @@ public class Aluno {
 	private String cpf;
 	private String nome;
 	private String email;
+	private SituacaoMatricula situacao;
 	
 	public String getProntuario() {
 		return prontuario;
@@ -20,11 +21,16 @@ public class Aluno {
 		return email;
 	}
 	
-	public Aluno(String prontuario, String cpf, String nome, String email) {
+	public SituacaoMatricula getSituacao() {
+		return situacao;
+	}
+	
+	public Aluno(String prontuario, String cpf, String nome, String email, SituacaoMatricula situacao) {
 		this.prontuario = prontuario;
 		this.cpf = cpf;
 		this.nome = nome;
 		this.email = email;
+		this.situacao = 0;
 	}
 	
 	@Override
